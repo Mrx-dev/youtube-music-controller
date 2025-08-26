@@ -1,7 +1,6 @@
 import { action, KeyDownEvent, SingletonAction } from "@elgato/streamdeck";
 import {ApiClient} from "../common/api-client";
 import {Endpoints} from "../common/endpoints";
-import { logger } from "../plugin";
 
 /**
  * Like the current song
@@ -12,7 +11,6 @@ export class Like extends SingletonAction<likeSettings> {
 		try {
 			await ApiClient.post(Endpoints.Like);
 		} catch (error) {
-			logger.error(error);
 			await ev.action.showAlert();
 		}
 	}

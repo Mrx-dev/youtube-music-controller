@@ -33,15 +33,11 @@
       "Name": "Like",
       "UUID": "com.kimjammer.youtube-music-controller.like",
       "Icon": "imgs/actions/like/like-off",
-      "Tooltip": "Goes back to previous song",
+      "Tooltip": "Toggles Like on the current song",
       "Controllers": ["Keypad"],
       "States": [
         {
           "Image": "imgs/actions/like/like-off",
-          "TitleAlignment": "middle"
-        },
-        {
-          "Image": "imgs/actions/like/like-on",
           "TitleAlignment": "middle"
         }
       ]

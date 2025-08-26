@@ -9,7 +9,7 @@ import {ToggleMute} from "./actions/toggle-mute";
 import { Repeat } from "./actions/repeat";
 import { Like } from "./actions/like";
 
-export const logger = streamDeck.logger.setLevel(LogLevel.DEBUG);
+streamDeck.logger.setLevel(LogLevel.DEBUG);
 
 // Register actions
 streamDeck.actions.registerAction(new Next());
